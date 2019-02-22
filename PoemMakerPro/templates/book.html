@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>{{ header }}</h1>
+<ul>
+    {% for book in books %}
+        <li>{{ book }}</li>
+    {% end %}
+</ul>
+<!-- {% import requests %}
+{% set resp=requests.get("https://www.baidu.com/") %}
+{% set resp.encoding="utf8" %}
+{{ resp.text }} -->
+{% end %}
